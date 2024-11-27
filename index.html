@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://js.arcgis.com/4.30/init.js" data-dojo-config="async: true"></script>
+<script>
+    window.onload = function () {
+		try {
+			require([
+				"esri/Basemap",
+				"esri/views/SceneView"
+			], function (
+				Map,
+				SceneView) {
+				console.log("Map module loaded successfully.");
+				// logic here
+			});
+		}
+		catch (e) {
+			console.log(e);
+		}
+    };
+</script>
+
+</head>
+<body></body>
+</html>
